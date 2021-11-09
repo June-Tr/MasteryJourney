@@ -1,0 +1,32 @@
+{
+  "name": "masteryjourney",
+  "version": "1.0.0",
+  "description": "Back-end side of an application use as todo list as well as log the time spend on achieve this mastery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/June-Tr/MasteryJourney.git"
+  },
+  "keywords": [
+    "backend",
+    "mastery",
+    "MarieDB",
+    "mission",
+    "javascript",
+    "node",
+    "express"
+  ],
+  "author": "June TRINH (GITHUB: https://github.com/June-Tr)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/June-Tr/MasteryJourney/issues"
+  },
+  "homepage": "https://github.com/June-Tr/MasteryJourney#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "git": "^0.1.5"
+  }
+}
