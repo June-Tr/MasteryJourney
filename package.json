@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/June-Tr/MasteryJourney#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "dotenv": "^10.0.0",
-    "git": "^0.1.5"
+    "express": "^4.17.1",
+    "git": "^0.1.5",
+    "mocha": "^9.1.3"
   }
 }
