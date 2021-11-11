@@ -1,0 +1,68 @@
+<Wed Nov 10 2021 12:39:38 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`;SELECT * FROM `mission` WHERE' at line 1> 
+<Wed Nov 10 2021 12:39:54 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`;SELECT * FROM `mission` WHERE' at line 1> 
+<Wed Nov 10 2021 12:41:50 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`;SELECT * FROM `mission` WHERE' at line 1> 
+<Wed Nov 10 2021 12:57:52 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`; 
+ INSERT INTO`mission` (`a`,`b`)  VALUES (`1`,`2`)' at line 1> 
+<Wed Nov 10 2021 12:58:08 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO`mission` (`a`,`b`)  VALUES (`1`,`2`)' at line 2> 
+<Wed Nov 10 2021 12:58:22 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`a`,`b`)  VALUES (`1`,`2`)' at line 2> 
+<Wed Nov 10 2021 13:01:35 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category`,`estimate_duration`,`actual_duration`,`dist...' at line 2> 
+<Wed Nov 10 2021 13:02:07 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_duration` ,`d...' at line 2> 
+<Wed Nov 10 2021 13:02:23 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_duration` ,`d...' at line 1> 
+<Wed Nov 10 2021 13:03:04 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_duration` ,`d...' at line 1> 
+<Wed Nov 10 2021 13:03:43 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_duration` ,`d...' at line 1> 
+<Wed Nov 10 2021 13:04:38 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_duration` ,`d...' at line 1> 
+<Wed Nov 10 2021 13:04:50 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_duration` ,`d...' at line 1> 
+<Wed Nov 10 2021 13:05:39 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'undefinedINSERT INTO `mission` (`category` ,`estimate_duration` ,`actual_dura...' at line 1> 
+<Wed Nov 10 2021 13:05:53 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':45:00 ,00:41:00 ,2 ,100 )' at line 1> 
+<Wed Nov 10 2021 13:06:13 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`;INSERT INTO `mission` (`category` ,`estimate_duration`...' at line 1> 
+<Wed Nov 10 2021 13:06:36 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`;SELECT * FROM `mission` WHERE' at line 1> 
+<Wed Nov 10 2021 13:06:36 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'using `masteryjourney`;INSERT INTO `mission` (`category` ,`estimate_duration`...' at line 1> 
+<Wed Nov 10 2021 13:07:07 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1> 
+<Wed Nov 10 2021 13:07:07 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':45:00 ,00:41:00 ,2 ,100 )' at line 1> 
+<Wed Nov 10 2021 13:07:19 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1> 
+<Wed Nov 10 2021 13:07:19 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':45:00 ,00:41:00 ,2 ,100 )' at line 1> 
+<Wed Nov 10 2021 13:07:54 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1> 
+<Wed Nov 10 2021 13:08:22 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1> 
+<Wed Nov 10 2021 13:08:22 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Error: Duplicate entry '0' for key 'PRIMARY'> 
+<Wed Nov 10 2021 13:11:02 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1> 
+<Wed Nov 10 2021 13:14:07 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:14:07 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:14:58 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:14:58 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:15:15 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:15:15 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:15:39 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:15:39 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:16:31 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:16:31 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:17:05 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:17:05 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:18:15 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:18:15 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:18:43 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:19:27 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:19:27 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:21:21 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:21:44 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:21:44 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:23:41 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:23:41 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:24:36 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:24:36 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:24:51 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:24:51 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:26:16 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:26:16 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:26:55 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:26:55 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:28:03 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:28:03 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:29:10 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:29:10 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:29:58 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:29:58 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:30:19 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:30:19 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:30:27 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
+<Wed Nov 10 2021 13:30:27 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:INSERT> <Successfully insert into mission!!!> 
+<Wed Nov 10 2021 13:31:30 GMT+1100 (Australian Eastern Daylight Time)> <Database Facade:SELECT> <Successfully retrieve from mission!!!> 
