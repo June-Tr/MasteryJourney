@@ -18,8 +18,9 @@ let dbFacade = {
                 database: process.env.DB,
                 Promise: bluebird
             }
-        );+
+        );
     },
+
     /**
      * @param {JSON} searchQuery format: {attribute_name: value, ..} 
      * @param {String} table the name of the table we want to query
@@ -74,6 +75,33 @@ let dbFacade = {
             await db.execute(query);
         }catch(err){
             logger.writeLog(err, "Database Facade:INSERT");
+        }
+    },
+
+    update: async (updateQuery, keyVal, table) => {
+        let query = ``;
+
+        query += `UPDATE \`${table}\` SET`;
+
+        // add set value
+        for(var attribute in updateQuery){
+            query += ` \`${attribute}\`=\`${updateQuery[attribute]}\`,`;
+        }
+        // eliminate the extra comma
+        query = query.substring(0, query.length - 1);
+
+        // add selection value
+        query += " WHERE";
+        for(var attribute in keyVal){
+            query +=  ` \`${attribute}\`=\`${keyVal[attribute]}\`,`;
+        }
+        // eliminate the extra comma
+        query = query.substring(0, query.length - 1);
+
+        try{
+            await db.execute(query);
+        } catch (err){
+            logger.writeLog(err, "Database Facade:UPDATE");
         }
     },
 

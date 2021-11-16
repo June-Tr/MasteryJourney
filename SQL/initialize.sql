@@ -50,6 +50,7 @@ CREATE TABLE IF NOT EXISTS `mission` (
 	`actual_duration` TIME,
 	`distract_count` INT NOT NULL DEFAULT 0,
 	`due_progression` DOUBLE DEFAULT 50,
+	`plan_`
 	`id` INT NOT NULL,
 	
 	PRIMARY KEY (`id`) USING HASH
