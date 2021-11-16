@@ -6,6 +6,9 @@ const cron = require("node-cron");
 let table = require("../model/db").table;
 let key = require("../model/db").key;
 let query = require("../model/db").query;
+
+let max = process.env.MAX_CACHE;
+let cur = 0;
 // cache all the event that is in today    
 
 /* internal data for save: make use of the event thread of the node js to go backing up data.
@@ -23,13 +26,17 @@ let autoSaveTask = cron.schedule("15 * * * * *", () => {
 });
 
 let save = () => {
-    if(stageChange.length > 1){
-        logger.writeLog(`Data in '${stageChange[0]}' is saved to DATA BASE~!`, "AutoSave");
-        
-        for(var i = 1; i < stageChange.length; i ++ ){
-            query.UPDATE(key[stageChange[0]], stageChange[i], stageChange[0]);
+    for(var stageChange of stash) {
+        if(stageChange.length > 1){
+            logger.writeLog(`Data in '${stageChange[0]}' is saved to DATA BASE~!`, "AutoSave");
+            
+            for(var i = 1; i < stageChange.length; i ++ ){
+                query.UPDATE(key[stageChange[0]], stageChange[i], stageChange[0]);
+            }  
         }
-    }  
+        //clear the stage change
+        stageChange = [stageChange[0]];  
+    }
 };
 
 let cache = {
@@ -157,16 +164,48 @@ let cache = {
         let concreteCache = pairHashCache[CACHE];
         let concreteHash = pairHashCache[HASH];
         if(!cache.check(table)){
+
+            // scenario where the cache is full
+            if(cur > max) {
+                this.makeRoom();
+            }
             // tell the auto save that there some change
             changeFlag = true;
             stash[table] = concreteCache.length;
 
             concreteHash[key] = concreteCache.length;
             concreteCache[key].push(value);
+            cur ++;
             return true;
         }
         return false;
+    },
+
+    /**
+     * Remove case cache is full{ this} just reduce any cache by half 
+     * This is just a brute-force solution due to that i dont expect the personal
+     * todo-list kind of app will hit a scenario of cache full (at all),
+     * Hence it is not worth it to waste computational power to perform preparation for cache swap.
+     * @param {object} cache of the table that we want to insert
+     */
+    makeRoom: (cache) => {
+        if(cache.length > 0) {
+            cache.splice(0 , 1);
+        }
+        else if(this.mission.length > 0){
+            cur -= (int) (this.mission.length / 2 ); 
+            this.mission.splice(0,(int) (this.mission.length / 2 ));
+        }
+        else if(this.test.length > 0){
+            cur -= (int) (this.test.length / 2 );
+            this.test.splice(0, (int) (this.test.length / 2 ));
+        }
+        else if(this.subskill.length > 0){
+            cur -=  (int) (this.subskill.length / 2 )
+            this.subskill.splice(0, (int) (this.subskill.length / 2 ));
+        }
     }
+    
 }
 
 module.exports = cache;
