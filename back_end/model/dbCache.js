@@ -55,7 +55,7 @@ let cache = {
      */
     init: async () => {
         // initiate the back ground auto saved
-        changeFalg = false;
+        changeFlag = false;
         stash = {
             mission : ['Mission cache',key['mission']],
             subskill: ['Sub-skill cache',key['subskill']],
@@ -68,7 +68,7 @@ let cache = {
         let dueDate = timeUtil.timeUtil.extractUnixOfYYYY_MM_DD( Date.now());
 
         // load daily mission.
-        temp = db.execute("SELECT", {plan_time: dueDate}, table.MISION );
+        temp = db.execute("SELECT", {plan_time: dueDate}, table.MISSION );
         for(var mission of temp){
             // add to the cache if not already exist
             if(!missionHash[mission.plan_time]){
@@ -77,7 +77,7 @@ let cache = {
 
             // add the subskill base off of the mission
             let tempSubSkill = DB.selectCustom(
-                `SELECT * FROM \`${table.SUBSKILL}\` WHERE \`label\`=(SELECT \`subskill_label\` FROM \`${table.PRACTISE}\`
+                `SELECT * FROM \`${table.SUBSKILL}\` WHERE \`label\`=(SELECT \`subskill_label\` FROM \`${table.PRACTICE}\`
                 WHERE \`mission_id\`=\`${mission.id}\`);`
                 , table.SUBSKILL
             );
@@ -107,7 +107,7 @@ let cache = {
         let cacheCheck = null;
 
         switch(table){
-            case table.MISION: {
+            case table.MISSION: {
                 hashCheck = this.missionHash;
                 cacheCheck = this.mission;
             }
@@ -130,7 +130,7 @@ let cache = {
      * @returns 
      */
     check: (table, key) => {
-        let hashCheck = cache.valiadate(table)[HASH];
+        let hashCheck = cache.validate(table)[HASH];
 
         return(hashCheck != null 
                 && hashCheck[key] != null);
@@ -157,7 +157,7 @@ let cache = {
      * @param {string} table table name
      * @param {string} key relation attribute
      * @param {object} value value that will be save into db
-     * @returns {bool} that indicate if the process is successfull
+     * @returns {bool} that indicate if the process is successfully insert
      */
     insert: (table, key, value) => {
         let pairHashCache = cache.getTable(table);
